@@ -1,0 +1,9 @@
+name: Github pull request labels
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  skip-test-labeler:
+    uses: Allda/action-label-test/.github/workflows/skip-test.yml@main
